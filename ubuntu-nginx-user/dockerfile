@@ -1,0 +1,8 @@
+#This image containx ngnix and normal user on ubuntu.
+
+FROM ubuntu:latest
+MAINTAINER lokesh904@gmail.com
+
+RUN apt-get update && apt-get install -y nginx
+RUN groupadd -r admin && useradd -r -g admin admin
+USER admin
