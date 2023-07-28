@@ -1,0 +1,7 @@
+#This image contains git on Ubuntu OS.
+FROM ubuntu:latest
+MAINTAINER lokesh904@gmail.com
+
+RUN apt-get update
+RUN apt-get install -y git
+
